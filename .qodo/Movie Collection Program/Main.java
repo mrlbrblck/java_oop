@@ -12,7 +12,7 @@ public class Main {
             command = scanner.nextLine().trim().toLowerCase();
 
             switch (command) {
-                case "add":
+                case "add" -> {
                     System.out.print("Title: ");
                     String title = scanner.nextLine();
                     System.out.print("Genre: ");
@@ -27,15 +27,13 @@ public class Main {
                     double rating = Double.parseDouble(scanner.nextLine());
                     
                     collection.addMovie(new Movie(title, genre, year, duration, new Director(directorName), rating));
-                    break;
-
-                case "remove":
+                }
+                case "remove" -> {
                     System.out.print("Enter movie title to remove: ");
                     String removeTitle = scanner.nextLine();
                     collection.removeMovie(removeTitle);
-                    break;
-
-                case "find":
+                }
+                case "find" -> {
                     System.out.print("Enter title or director to find: ");
                     String searchQuery = scanner.nextLine();
                     List<Movie> foundMovies = collection.findMovies(searchQuery);
@@ -46,19 +44,14 @@ public class Main {
                     } else {
                         System.out.println("No movies found matching the query.");
                     }
-                    break;
-
-                case "list":
-                    collection.listMovies();
-                    break;
-
-                case "exit":
+                }
+                case "list" -> collection.listMovies();
+                case "exit" -> {
                     System.out.println("Exiting program.");
                     scanner.close();
                     return;
-
-                default:
-                    System.out.println("Invalid command. Try again.");
+                }
+                default -> System.out.println("Invalid command. Try again.");
             }
         }
     }
