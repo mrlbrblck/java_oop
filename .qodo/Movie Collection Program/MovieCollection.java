@@ -1,6 +1,6 @@
 import  java.util.*;
 public class MovieCollection {
-    private ArrayList<Movie> movies = new ArrayList<>();
+    private final ArrayList<Movie> movies = new ArrayList<>();
 
     public void addMovie(Movie movie) {
         movies.add(movie);

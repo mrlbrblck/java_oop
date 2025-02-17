@@ -1,10 +1,10 @@
 public class Movie {
-    private String title;
-    private String genre;
-    private int year;
-    private int duration;
-    private Director director;
-    private double rating;
+    private final String title;
+    private final String genre;
+    private final int year;
+    private final int duration;
+    private final Director director;
+    private final double rating;
 
     public Movie(String title, String genre, int year, int duration, Director director, double rating) {
         this.title = title;
