@@ -4,8 +4,8 @@
 This repository contains all projects based on **Object-Oriented Programming (OOP)** by **mrlbrblck**. It serves as a collection of Java applications demonstrating various OOP principles.
 
 ## Creator
-**D.M. Anazario**  
-**Bachelor of Science in Information Technology, 2nd Year (BSIT 2)**
+**github: mrlbrblck**
+
 
 ## Purpose
 - To organize and manage OOP-based projects.
