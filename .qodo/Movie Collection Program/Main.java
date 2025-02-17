@@ -1,49 +1,64 @@
 import java.util.*;
-
 public class Main {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        MovieCollection movieCollection = new MovieCollection();
+        Scanner scanner = new Scanner(System.in);
+        MovieCollection collection = new MovieCollection();
         String command;
 
-        System.out.println("Welcome to the Movie Collection Program!");
-        System.out.println("What do you want to do today?");
-        
+        System.out.println("Welcome to the Movie Collection Manager!");
+
         while (true) {
-            System.out.println("(Add, Remove, Find, List, Exit)");
-            command = sc.nextLine().trim().toLowerCase();
+            System.out.print("\nCommand (add, remove, find, list, exit): ");
+            command = scanner.nextLine().trim().toLowerCase();
+
             switch (command) {
+                case "add":
+                    System.out.print("Title: ");
+                    String title = scanner.nextLine();
+                    System.out.print("Genre: ");
+                    String genre = scanner.nextLine();
+                    System.out.print("Release Year: ");
+                    int year = Integer.parseInt(scanner.nextLine());
+                    System.out.print("Duration (in mins): ");
+                    int duration = Integer.parseInt(scanner.nextLine());
+                    System.out.print("Director's Name: ");
+                    String directorName = scanner.nextLine();
+                    System.out.print("Rating: ");
+                    double rating = Double.parseDouble(scanner.nextLine());
+                    
+                    collection.addMovie(new Movie(title, genre, year, duration, new Director(directorName), rating));
+                    break;
 
-                case "add" -> {
-                    System.out.println("Title:");
-                    String name = sc.nextLine();
-                    System.out.println("Director:");
-                    String director = sc.nextLine();
-                    System.out.println("Release Year:");
-                    int releaseYear = Integer.parseInt(sc.nextLine());
-                    System.out.println("Genre: ");
-                    String genre = sc.nextLine();
+                case "remove":
+                    System.out.print("Enter movie title to remove: ");
+                    String removeTitle = scanner.nextLine();
+                    collection.removeMovie(removeTitle);
+                    break;
 
-                    movieCollection.addMovie(name, director, releaseYear, genre);
-                    System.out.println("Movie added successfully!");
-                }
+                case "find":
+                    System.out.print("Enter title or director to find: ");
+                    String searchQuery = scanner.nextLine();
+                    List<Movie> foundMovies = collection.findMovies(searchQuery);
+                    if (!foundMovies.isEmpty()) {
+                        for (Movie movie : foundMovies) {
+                            System.out.println("Found: " + movie);
+                        }
+                    } else {
+                        System.out.println("No movies found matching the query.");
+                    }
+                    break;
 
-                case "remove" -> {
-                    System.out.println("Enter the name of the movie to be removed");
-                    String name = sc.nextLine();
-                    movieCollection.removeMovie(name);
-                }
-                case "list" -> movieCollection.displayAllMovies();
-                case "find" -> {
-                    System.out.println("Enter the name of the movie to be displayed");
-                    String name = sc.nextLine();
-                    movieCollection.displayMovie(name);
-                }
-                case "exit" -> {
-                    System.out.println("Goodbye!");
-                    System.exit(0);
-                }
-                default -> System.out.println("Invalid choice");
+                case "list":
+                    collection.listMovies();
+                    break;
+
+                case "exit":
+                    System.out.println("Exiting program.");
+                    scanner.close();
+                    return;
+
+                default:
+                    System.out.println("Invalid command. Try again.");
             }
         }
     }
