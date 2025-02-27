@@ -40,7 +40,7 @@ This **Movie Management System** is a simple Java-based console application that
 ## How to Run
 1. Clone the repository:
    ```sh
-   git clone https://github.com/yourusername/Movie-Management-System.git
+   git clone https://github.com/mrlbrblk/Movie-Management-System.git
    ```
 2. Navigate to the project directory:
    ```sh
