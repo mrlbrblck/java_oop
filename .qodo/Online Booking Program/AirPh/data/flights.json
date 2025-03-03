@@ -1,0 +1,82 @@
+[
+  {
+    "flightId": "PAL123",
+    "airline": "Philippine Airlines",
+    "origin": "Manila (MNL)",
+    "destination": "Cebu (CEB)",
+    "departureTime": "06:30",
+    "arrivalTime": "07:50",
+    "price": 4200.0,
+    "seatsAvailable": 150
+  },
+  {
+    "flightId": "5J789",
+    "airline": "Cebu Pacific",
+    "origin": "Manila (MNL)",
+    "destination": "Davao (DVO)",
+    "departureTime": "11:15",
+    "arrivalTime": "12:35",
+    "price": 3150.0,
+    "seatsAvailable": 180
+  },
+  {
+    "flightId": "Z2345",
+    "airline": "AirAsia Philippines",
+    "origin": "Manila (MNL)",
+    "destination": "Clark (CRK)",
+    "departureTime": "09:00",
+    "arrivalTime": "09:45",
+    "price": 2450.0,
+    "seatsAvailable": 200
+  },
+  {
+    "flightId": "SJ901",
+    "airline": "SkyJet",
+    "origin": "Manila (MNL)",
+    "destination": "Busuanga (USU)",
+    "departureTime": "07:00",
+    "arrivalTime": "08:10",
+    "price": 5800.0,
+    "seatsAvailable": 72
+  },
+  {
+    "flightId": "PAL456",
+    "airline": "Philippine Airlines",
+    "origin": "Manila (MNL)",
+    "destination": "Iloilo (ILO)",
+    "departureTime": "14:20",
+    "arrivalTime": "15:50",
+    "price": 4950.0,
+    "seatsAvailable": 120
+  },
+  {
+    "flightId": "5J234",
+    "airline": "Cebu Pacific",
+    "origin": "Manila (MNL)",
+    "destination": "Cagayan de Oro (CGY)",
+    "departureTime": "16:45",
+    "arrivalTime": "18:15",
+    "price": 3650.0,
+    "seatsAvailable": 160
+  },
+  {
+    "flightId": "Z2678",
+    "airline": "AirAsia Philippines",
+    "origin": "Manila (MNL)",
+    "destination": "Puerto Princesa (PPS)",
+    "departureTime": "10:30",
+    "arrivalTime": "12:00",
+    "price": 4100.0,
+    "seatsAvailable": 140
+  },
+  {
+    "flightId": "PAL789",
+    "airline": "Philippine Airlines",
+    "origin": "Manila (MNL)",
+    "destination": "Bacolod (BCD)",
+    "departureTime": "13:15",
+    "arrivalTime": "14:30",
+    "price": 3750.0,
+    "seatsAvailable": 130
+  }
+]

@@ -1,0 +1,82 @@
+[
+    {
+      "hotelId": "H001",
+      "name": "Manila Grand Hotel",
+      "location": "Manila",
+      "rating": 4.5,
+      "roomsAvailable": 20,
+      "pricePerNight": 2500.00
+    },
+    {
+      "hotelId": "H002",
+      "name": "Cebu Beach Resort",
+      "location": "Cebu",
+      "rating": 4.8,
+      "roomsAvailable": 15,
+      "pricePerNight": 4500.00
+    },
+    {
+      "hotelId": "H003",
+      "name": "Boracay Sands Luxury Resort",
+      "location": "Boracay",
+      "rating": 4.9,
+      "roomsAvailable": 12,
+      "pricePerNight": 8500.00
+    },
+    {
+      "hotelId": "H004",
+      "name": "Palawan Eco Paradise",
+      "location": "El Nido, Palawan",
+      "rating": 4.7,
+      "roomsAvailable": 8,
+      "pricePerNight": 12000.00
+    },
+    {
+      "hotelId": "H005",
+      "name": "Siargao Surfers Lodge",
+      "location": "Siargao",
+      "rating": 4.3,
+      "roomsAvailable": 18,
+      "pricePerNight": 3200.00
+    },
+    {
+      "hotelId": "H006",
+      "name": "Davao Highlands Retreat",
+      "location": "Davao",
+      "rating": 4.6,
+      "roomsAvailable": 10,
+      "pricePerNight": 5500.00
+    },
+    {
+      "hotelId": "H007",
+      "name": "Bohol Chocolate Hills Resort",
+      "location": "Bohol",
+      "rating": 4.4,
+      "roomsAvailable": 25,
+      "pricePerNight": 3800.00
+    },
+    {
+      "hotelId": "H008",
+      "name": "Tagaytay Mountain View Inn",
+      "location": "Tagaytay",
+      "rating": 4.2,
+      "roomsAvailable": 30,
+      "pricePerNight": 2800.00
+    },
+    {
+      "hotelId": "H009",
+      "name": "Coron Island Dive Resort",
+      "location": "Coron, Palawan",
+      "rating": 4.8,
+      "roomsAvailable": 6,
+      "pricePerNight": 15000.00
+    },
+    {
+      "hotelId": "H010",
+      "name": "Baguio Pinewood Lodge",
+      "location": "Baguio",
+      "rating": 4.1,
+      "roomsAvailable": 22,
+      "pricePerNight": 3500.00
+    }
+  ]
